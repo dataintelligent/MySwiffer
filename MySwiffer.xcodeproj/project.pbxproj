@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17050FA01CDA3C4100DA749B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17050F9F1CDA3C4100DA749B /* AppDelegate.swift */; };
+		17050FA21CDA3C4100DA749B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17050FA11CDA3C4100DA749B /* ViewController.swift */; };
+		17050FA51CDA3C4100DA749B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17050FA31CDA3C4100DA749B /* Main.storyboard */; };
+		17050FA81CDA3C4100DA749B /* MySwiffer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17050FA61CDA3C4100DA749B /* MySwiffer.xcdatamodeld */; };
+		17050FAA1CDA3C4100DA749B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17050FA91CDA3C4100DA749B /* Assets.xcassets */; };
+		17050FAD1CDA3C4100DA749B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17050FAB1CDA3C4100DA749B /* LaunchScreen.storyboard */; };
+		17050FB81CDA3C4100DA749B /* MySwifferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17050FB71CDA3C4100DA749B /* MySwifferTests.swift */; };
+		17050FC31CDA3C4100DA749B /* MySwifferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17050FC21CDA3C4100DA749B /* MySwifferUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17050FB41CDA3C4100DA749B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17050F941CDA3C4100DA749B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17050F9B1CDA3C4100DA749B;
+			remoteInfo = MySwiffer;
+		};
+		17050FBF1CDA3C4100DA749B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17050F941CDA3C4100DA749B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17050F9B1CDA3C4100DA749B;
+			remoteInfo = MySwiffer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17050F9C1CDA3C4100DA749B /* MySwiffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17050F9F1CDA3C4100DA749B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17050FA11CDA3C4100DA749B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17050FA41CDA3C4100DA749B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17050FA71CDA3C4100DA749B /* MySwiffer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MySwiffer.xcdatamodel; sourceTree = "<group>"; };
+		17050FA91CDA3C4100DA749B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17050FAC1CDA3C4100DA749B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17050FAE1CDA3C4100DA749B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17050FB31CDA3C4100DA749B /* MySwifferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwifferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17050FB71CDA3C4100DA749B /* MySwifferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwifferTests.swift; sourceTree = "<group>"; };
+		17050FB91CDA3C4100DA749B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17050FBE1CDA3C4100DA749B /* MySwifferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwifferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17050FC21CDA3C4100DA749B /* MySwifferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwifferUITests.swift; sourceTree = "<group>"; };
+		17050FC41CDA3C4100DA749B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17050F991CDA3C4100DA749B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17050FB01CDA3C4100DA749B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17050FBB1CDA3C4100DA749B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17050F931CDA3C4100DA749B = {
+			isa = PBXGroup;
+			children = (
+				17050F9E1CDA3C4100DA749B /* MySwiffer */,
+				17050FB61CDA3C4100DA749B /* MySwifferTests */,
+				17050FC11CDA3C4100DA749B /* MySwifferUITests */,
+				17050F9D1CDA3C4100DA749B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17050F9D1CDA3C4100DA749B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17050F9C1CDA3C4100DA749B /* MySwiffer.app */,
+				17050FB31CDA3C4100DA749B /* MySwifferTests.xctest */,
+				17050FBE1CDA3C4100DA749B /* MySwifferUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17050F9E1CDA3C4100DA749B /* MySwiffer */ = {
+			isa = PBXGroup;
+			children = (
+				17050F9F1CDA3C4100DA749B /* AppDelegate.swift */,
+				17050FA11CDA3C4100DA749B /* ViewController.swift */,
+				17050FA31CDA3C4100DA749B /* Main.storyboard */,
+				17050FA91CDA3C4100DA749B /* Assets.xcassets */,
+				17050FAB1CDA3C4100DA749B /* LaunchScreen.storyboard */,
+				17050FAE1CDA3C4100DA749B /* Info.plist */,
+				17050FA61CDA3C4100DA749B /* MySwiffer.xcdatamodeld */,
+			);
+			path = MySwiffer;
+			sourceTree = "<group>";
+		};
+		17050FB61CDA3C4100DA749B /* MySwifferTests */ = {
+			isa = PBXGroup;
+			children = (
+				17050FB71CDA3C4100DA749B /* MySwifferTests.swift */,
+				17050FB91CDA3C4100DA749B /* Info.plist */,
+			);
+			path = MySwifferTests;
+			sourceTree = "<group>";
+		};
+		17050FC11CDA3C4100DA749B /* MySwifferUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17050FC21CDA3C4100DA749B /* MySwifferUITests.swift */,
+				17050FC41CDA3C4100DA749B /* Info.plist */,
+			);
+			path = MySwifferUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17050F9B1CDA3C4100DA749B /* MySwiffer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17050FC71CDA3C4100DA749B /* Build configuration list for PBXNativeTarget "MySwiffer" */;
+			buildPhases = (
+				17050F981CDA3C4100DA749B /* Sources */,
+				17050F991CDA3C4100DA749B /* Frameworks */,
+				17050F9A1CDA3C4100DA749B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySwiffer;
+			productName = MySwiffer;
+			productReference = 17050F9C1CDA3C4100DA749B /* MySwiffer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17050FB21CDA3C4100DA749B /* MySwifferTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17050FCA1CDA3C4100DA749B /* Build configuration list for PBXNativeTarget "MySwifferTests" */;
+			buildPhases = (
+				17050FAF1CDA3C4100DA749B /* Sources */,
+				17050FB01CDA3C4100DA749B /* Frameworks */,
+				17050FB11CDA3C4100DA749B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17050FB51CDA3C4100DA749B /* PBXTargetDependency */,
+			);
+			name = MySwifferTests;
+			productName = MySwifferTests;
+			productReference = 17050FB31CDA3C4100DA749B /* MySwifferTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17050FBD1CDA3C4100DA749B /* MySwifferUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17050FCD1CDA3C4100DA749B /* Build configuration list for PBXNativeTarget "MySwifferUITests" */;
+			buildPhases = (
+				17050FBA1CDA3C4100DA749B /* Sources */,
+				17050FBB1CDA3C4100DA749B /* Frameworks */,
+				17050FBC1CDA3C4100DA749B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17050FC01CDA3C4100DA749B /* PBXTargetDependency */,
+			);
+			name = MySwifferUITests;
+			productName = MySwifferUITests;
+			productReference = 17050FBE1CDA3C4100DA749B /* MySwifferUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17050F941CDA3C4100DA749B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Data Intelligence";
+				TargetAttributes = {
+					17050F9B1CDA3C4100DA749B = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					17050FB21CDA3C4100DA749B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 17050F9B1CDA3C4100DA749B;
+					};
+					17050FBD1CDA3C4100DA749B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 17050F9B1CDA3C4100DA749B;
+					};
+				};
+			};
+			buildConfigurationList = 17050F971CDA3C4100DA749B /* Build configuration list for PBXProject "MySwiffer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17050F931CDA3C4100DA749B;
+			productRefGroup = 17050F9D1CDA3C4100DA749B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17050F9B1CDA3C4100DA749B /* MySwiffer */,
+				17050FB21CDA3C4100DA749B /* MySwifferTests */,
+				17050FBD1CDA3C4100DA749B /* MySwifferUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17050F9A1CDA3C4100DA749B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17050FAD1CDA3C4100DA749B /* LaunchScreen.storyboard in Resources */,
+				17050FAA1CDA3C4100DA749B /* Assets.xcassets in Resources */,
+				17050FA51CDA3C4100DA749B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17050FB11CDA3C4100DA749B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17050FBC1CDA3C4100DA749B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17050F981CDA3C4100DA749B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17050FA21CDA3C4100DA749B /* ViewController.swift in Sources */,
+				17050FA01CDA3C4100DA749B /* AppDelegate.swift in Sources */,
+				17050FA81CDA3C4100DA749B /* MySwiffer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17050FAF1CDA3C4100DA749B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17050FB81CDA3C4100DA749B /* MySwifferTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17050FBA1CDA3C4100DA749B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17050FC31CDA3C4100DA749B /* MySwifferUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17050FB51CDA3C4100DA749B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17050F9B1CDA3C4100DA749B /* MySwiffer */;
+			targetProxy = 17050FB41CDA3C4100DA749B /* PBXContainerItemProxy */;
+		};
+		17050FC01CDA3C4100DA749B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17050F9B1CDA3C4100DA749B /* MySwiffer */;
+			targetProxy = 17050FBF1CDA3C4100DA749B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17050FA31CDA3C4100DA749B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17050FA41CDA3C4100DA749B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17050FAB1CDA3C4100DA749B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17050FAC1CDA3C4100DA749B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17050FC51CDA3C4100DA749B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17050FC61CDA3C4100DA749B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17050FC81CDA3C4100DA749B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MySwiffer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sg.com.dataintelligence.MySwiffer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		17050FC91CDA3C4100DA749B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MySwiffer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sg.com.dataintelligence.MySwiffer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		17050FCB1CDA3C4100DA749B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MySwifferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sg.com.dataintelligence.MySwifferTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySwiffer.app/MySwiffer";
+			};
+			name = Debug;
+		};
+		17050FCC1CDA3C4100DA749B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MySwifferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sg.com.dataintelligence.MySwifferTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySwiffer.app/MySwiffer";
+			};
+			name = Release;
+		};
+		17050FCE1CDA3C4100DA749B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MySwifferUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sg.com.dataintelligence.MySwifferUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MySwiffer;
+			};
+			name = Debug;
+		};
+		17050FCF1CDA3C4100DA749B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MySwifferUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sg.com.dataintelligence.MySwifferUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MySwiffer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17050F971CDA3C4100DA749B /* Build configuration list for PBXProject "MySwiffer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17050FC51CDA3C4100DA749B /* Debug */,
+				17050FC61CDA3C4100DA749B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17050FC71CDA3C4100DA749B /* Build configuration list for PBXNativeTarget "MySwiffer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17050FC81CDA3C4100DA749B /* Debug */,
+				17050FC91CDA3C4100DA749B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17050FCA1CDA3C4100DA749B /* Build configuration list for PBXNativeTarget "MySwifferTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17050FCB1CDA3C4100DA749B /* Debug */,
+				17050FCC1CDA3C4100DA749B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17050FCD1CDA3C4100DA749B /* Build configuration list for PBXNativeTarget "MySwifferUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17050FCE1CDA3C4100DA749B /* Debug */,
+				17050FCF1CDA3C4100DA749B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		17050FA61CDA3C4100DA749B /* MySwiffer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				17050FA71CDA3C4100DA749B /* MySwiffer.xcdatamodel */,
+			);
+			currentVersion = 17050FA71CDA3C4100DA749B /* MySwiffer.xcdatamodel */;
+			path = MySwiffer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 17050F941CDA3C4100DA749B /* Project object */;
+}
