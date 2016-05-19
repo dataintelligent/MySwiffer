@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1700D75F1CEDC1CE0072F223 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1700D75E1CEDC1CE0072F223 /* CloudKit.framework */; };
 		17050FA01CDA3C4100DA749B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17050F9F1CDA3C4100DA749B /* AppDelegate.swift */; };
 		17050FA21CDA3C4100DA749B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17050FA11CDA3C4100DA749B /* ViewController.swift */; };
 		17050FA51CDA3C4100DA749B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17050FA31CDA3C4100DA749B /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1700D75D1CEDC1C10072F223 /* MySwiffer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MySwiffer.entitlements; sourceTree = "<group>"; };
+		1700D75E1CEDC1CE0072F223 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		17050F9C1CDA3C4100DA749B /* MySwiffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17050F9F1CDA3C4100DA749B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17050FA11CDA3C4100DA749B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1700D75F1CEDC1CE0072F223 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 		17050F931CDA3C4100DA749B = {
 			isa = PBXGroup;
 			children = (
+				1700D75E1CEDC1CE0072F223 /* CloudKit.framework */,
 				17050F9E1CDA3C4100DA749B /* MySwiffer */,
 				17050FB61CDA3C4100DA749B /* MySwifferTests */,
 				17050FC11CDA3C4100DA749B /* MySwifferUITests */,
@@ -99,6 +104,7 @@
 		17050F9E1CDA3C4100DA749B /* MySwiffer */ = {
 			isa = PBXGroup;
 			children = (
+				1700D75D1CEDC1C10072F223 /* MySwiffer.entitlements */,
 				17050F9F1CDA3C4100DA749B /* AppDelegate.swift */,
 				17050FA11CDA3C4100DA749B /* ViewController.swift */,
 				17050FA31CDA3C4100DA749B /* Main.storyboard */,
@@ -197,6 +203,11 @@
 					17050F9B1CDA3C4100DA749B = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 3WMUT8MUS7;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					17050FB21CDA3C4100DA749B = {
 						CreatedOnToolsVersion = 7.3;
@@ -404,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySwiffer/MySwiffer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MySwiffer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -416,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySwiffer/MySwiffer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MySwiffer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -489,6 +502,7 @@
 				17050FC91CDA3C4100DA749B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17050FCA1CDA3C4100DA749B /* Build configuration list for PBXNativeTarget "MySwifferTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +511,7 @@
 				17050FCC1CDA3C4100DA749B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17050FCD1CDA3C4100DA749B /* Build configuration list for PBXNativeTarget "MySwifferUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +520,7 @@
 				17050FCF1CDA3C4100DA749B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
