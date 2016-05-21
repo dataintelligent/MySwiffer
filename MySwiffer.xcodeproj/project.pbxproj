@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1700D75F1CEDC1CE0072F223 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1700D75E1CEDC1CE0072F223 /* CloudKit.framework */; };
 		1700D7611CEDCBA20072F223 /* SweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1700D7601CEDCBA20072F223 /* SweetsTableViewController.swift */; };
 		17050FA01CDA3C4100DA749B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17050F9F1CDA3C4100DA749B /* AppDelegate.swift */; };
 		17050FA51CDA3C4100DA749B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17050FA31CDA3C4100DA749B /* Main.storyboard */; };
@@ -16,6 +15,7 @@
 		17050FAD1CDA3C4100DA749B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17050FAB1CDA3C4100DA749B /* LaunchScreen.storyboard */; };
 		17050FB81CDA3C4100DA749B /* MySwifferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17050FB71CDA3C4100DA749B /* MySwifferTests.swift */; };
 		17050FC31CDA3C4100DA749B /* MySwifferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17050FC21CDA3C4100DA749B /* MySwifferUITests.swift */; };
+		173B3A151CEED5800044E740 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173B3A141CEED5800044E740 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		1700D75D1CEDC1C10072F223 /* MySwiffer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MySwiffer.entitlements; sourceTree = "<group>"; };
-		1700D75E1CEDC1CE0072F223 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		1700D7601CEDCBA20072F223 /* SweetsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetsTableViewController.swift; sourceTree = "<group>"; };
 		17050F9C1CDA3C4100DA749B /* MySwiffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17050F9F1CDA3C4100DA749B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		17050FBE1CDA3C4100DA749B /* MySwifferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwifferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17050FC21CDA3C4100DA749B /* MySwifferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwifferUITests.swift; sourceTree = "<group>"; };
 		17050FC41CDA3C4100DA749B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		173B3A141CEED5800044E740 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1700D75F1CEDC1CE0072F223 /* CloudKit.framework in Frameworks */,
+				173B3A151CEED5800044E740 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		17050F931CDA3C4100DA749B = {
 			isa = PBXGroup;
 			children = (
-				1700D75E1CEDC1CE0072F223 /* CloudKit.framework */,
+				173B3A141CEED5800044E740 /* CloudKit.framework */,
 				17050F9E1CDA3C4100DA749B /* MySwiffer */,
 				17050FB61CDA3C4100DA749B /* MySwifferTests */,
 				17050FC11CDA3C4100DA749B /* MySwifferUITests */,
@@ -418,6 +418,7 @@
 				CODE_SIGN_ENTITLEMENTS = MySwiffer/MySwiffer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MySwiffer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.com.dataintelligence.MySwiffer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +432,7 @@
 				CODE_SIGN_ENTITLEMENTS = MySwiffer/MySwiffer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MySwiffer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.com.dataintelligence.MySwiffer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
