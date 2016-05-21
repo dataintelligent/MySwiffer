@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import CloudKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +17,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
         return true
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        let cloudKitNotification = CKNotification(fromRemoteNotificationDictionary: userInfo as! [String:NSObject])
+        if cloudKitNotification.notificationType == CKNotificationType.Query {
+            dispatch_sync(dispatch_get_main_queue(), { 
+                NSNotificationCenter.defaultCenter().postNotificationName("performReload", object: nil)
+            })
+            
+        }
+        
+    }
+    
+    func resetBadge () {
+        let badgeReset = CKModifyBadgeOperation(badgeValue: 0)
+        badgeReset.modifyBadgeCompletionBlock = { (error)  in
+            if error == nil{
+                UIApplication.sharedApplication().applicationIconBadgeNumber = 0
+            }
+        }
+        CKContainer.defaultContainer().addOperation(badgeReset)
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -26,16 +51,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        resetBadge()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        dispatch_sync(dispatch_get_main_queue(), {
+            NSNotificationCenter.defaultCenter().postNotificationName("performReload", object: nil)
+        })
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        resetBadge()
     }
 
     func applicationWillTerminate(application: UIApplication) {

@@ -24,11 +24,41 @@ class SweetsTableViewController: UITableViewController {
         refreshControl?.attributedTitle = NSAttributedString(string: "Pulldown")
         self.refreshControl?.addTarget(self, action: #selector(SweetsTableViewController.loadData), forControlEvents:.ValueChanged)
         
+        setupCloudKitSubscription()
+        dispatch_async(dispatch_get_main_queue(), {
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SweetsTableViewController.loadData), name: "performReload", object: nil)
+        })
+        
         loadData()
     }
     
+    func setupCloudKitSubscription(){
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        if userDefaults.boolForKey("subscribed") == false {
+            let predicate = NSPredicate(format: "TRUEPREDICATE", argumentArray: nil)
+            let subscription = CKSubscription(recordType: "Sweet", predicate: predicate, options: CKSubscriptionOptions.FiresOnRecordCreation)
+            let notificationInfo = CKNotificationInfo()
+            notificationInfo.alertLocalizationKey = "New Sweet"
+            notificationInfo.shouldBadge = true
+            subscription.notificationInfo = notificationInfo
+            let publicData = CKContainer.defaultContainer().publicCloudDatabase
+            
+            publicData.saveSubscription(subscription) { (subscription:CKSubscription?, error:NSError?) in
+                if error != nil {
+                    print(error?.localizedDescription)
+                }else{
+                    userDefaults.setBool(true, forKey: "subscribed")
+                    userDefaults.synchronize()
+                }
+            }
+
+        }
+        
+        
+    }
+    
     func loadData(){
-        print (" data loading ..")
+        
         sweets = [CKRecord]()
         let publicData = CKContainer.defaultContainer().publicCloudDatabase
         let query = CKQuery(recordType: "Sweet", predicate: NSPredicate(format: "TRUEPREDICATE", argumentArray: nil))
@@ -37,11 +67,12 @@ class SweetsTableViewController: UITableViewController {
         publicData.performQuery(query, inZoneWithID: nil) { (results:[CKRecord]?, error:NSError?) in
             if let sweets = results {
                 self.sweets = sweets
-                print (" data loaded")
+                //print (" data loaded")
                 dispatch_async(dispatch_get_main_queue(), { 
                     self.tableView.reloadData()
                     //self.refresh.endRefreshing()
                     self.refreshControl?.endRefreshing()
+                    self.view.layoutSubviews()
                 })
             }
             
@@ -65,7 +96,7 @@ class SweetsTableViewController: UITableViewController {
                         print(error)
                     }
                     if error == nil {
-                        print("Sweet Saved")
+                        //print("Sweet Saved")
                         dispatch_sync(dispatch_get_main_queue(), { 
                             self.tableView.beginUpdates()
                             self.sweets.insert(newSweet, atIndex: 0)
@@ -109,7 +140,7 @@ class SweetsTableViewController: UITableViewController {
         let sweet = sweets[indexPath.row]
         if let sweetContent = sweet["content"] as? String {
             let dateFormat = NSDateFormatter()
-            dateFormat.dateFormat = "dd/MMM/YYYY"
+            dateFormat.dateFormat = "dd/MMM/YYYY HH:mm:ss"
             let dateString = dateFormat.stringFromDate(sweet.creationDate!)
             
             cell.textLabel?.text = sweetContent
